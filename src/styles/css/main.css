@@ -68,6 +68,8 @@ header {
   z-index: 150;
   box-shadow: 0 6px 5px #545454;
   margin-bottom: -80px; }
+  .main-nav :not(:last-child) {
+    border-right: 1px solid #172A3A; }
   .main-nav .nav-links {
     margin: auto; }
   .main-nav a {
@@ -93,6 +95,22 @@ main {
   padding: 110px 50px 50px; }
   main .down-arrow {
     text-align: center;
-    font-size: 3rem;
-    padding: 5rem;
+    font-size: 4rem;
+    padding: 4rem;
     color: #faebd7; }
+
+.about img {
+  width: 100%;
+  padding-top: 10rem; }
+
+.about .about-greet {
+  text-align: center;
+  color: #faebd7;
+  padding-bottom: 7rem; }
+
+.about .about-words {
+  background-color: white;
+  opacity: 0.4;
+  border-radius: 10px; }
+  .about .about-words p {
+    padding: 5px; }

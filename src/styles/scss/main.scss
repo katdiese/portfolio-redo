@@ -76,6 +76,10 @@ header {
   box-shadow: 0 6px 5px $dark-gray;
   margin-bottom: -80px;
 
+  :not(:last-child) {
+      border-right: 1px solid $dark;
+    }
+
   .nav-links {
     margin: auto;
   }
@@ -108,9 +112,32 @@ main {
 
   .down-arrow {
     text-align: center;
-    font-size: 3rem;
-    padding: 5rem;
+    font-size: 4rem;
+    padding: 4rem;
     color: $off-white;
   }
 
+}
+
+.about {
+
+  img {
+    width: 100%;
+    padding-top: 10rem;
+  }
+  .about-greet {
+    text-align: center;
+    color: $off-white;
+    padding-bottom: 7rem;
+  }
+
+  .about-words {
+    background-color: white;
+    opacity: 0.4;
+    border-radius: 10px;
+
+    p {
+      padding: 5px;
+    }
+  }
 }
