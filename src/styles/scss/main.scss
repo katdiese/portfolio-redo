@@ -2,13 +2,17 @@ $off-white: #faebd7;
 $dark-gray: #545454;
 $dark: #172A3A;
 $light: #74B3CE;
+$purple: #656176;
 
+* {
+  font-family: 'Cantarell', sans-serif;
+}
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  padding-top: 600px;
+  padding-top: 550px;
 }
 .typed-cursor{
   opacity: 1;
@@ -32,19 +36,22 @@ body {
   100% { opacity:1; }
 }
 header {
-  height: 600px;
+  height: 550px;
   text-align: center;
   display: flex;
   background-image: url('../../images/mountain.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   flex-direction: column;
+  font-color: $dark;
 
   h1 {
     font-size: 5rem;
+    font-family: 'Fjalla One', sans-serif;
   }
   h2 {
     font-size: 2.5rem;
+    // font-family: 'Cantarell', sans-serif;
   }
 
   .hero-text {
@@ -69,8 +76,21 @@ header {
   box-shadow: 0 6px 5px $dark-gray;
   margin-bottom: -80px;
 
-  a {
+  .nav-links {
     margin: auto;
+  }
+
+  a {
+    padding: 0 30px;
+    font-size: 1.75rem;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 700;
+    color: $dark;
+
+    &:hover {
+      border-bottom: 3px dotted $dark;
+    }
   }
 }
 .main-nav, main {
@@ -83,6 +103,14 @@ header {
 }
 
 main {
-  background-color: white;
-  padding: 110px 50px 50px
+  background-color: $purple;
+  padding: 110px 50px 50px;
+
+  .down-arrow {
+    text-align: center;
+    font-size: 3rem;
+    padding: 5rem;
+    color: $off-white;
+  }
+
 }
