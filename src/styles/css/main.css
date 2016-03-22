@@ -1,7 +1,9 @@
 body {
   margin: 0;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  font-size: 16px;
+  padding-top: 600px; }
 
 .typed-cursor {
   opacity: 1;
@@ -34,10 +36,44 @@ body {
     opacity: 1; } }
 
 header {
-  height: 75vh;
+  height: 600px;
   text-align: center;
   display: flex;
   background-image: url("../../images/mountain.jpeg");
-  background-size: 100%; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column; }
+  header h1 {
+    font-size: 5rem; }
+  header h2 {
+    font-size: 2.5rem; }
   header .hero-text {
     margin: auto; }
+  header .location a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem; }
+    header .location a i {
+      padding: 0 10px; }
+
+.main-nav {
+  background: #faebd7;
+  height: 80px;
+  display: flex;
+  z-index: 150;
+  box-shadow: 0 6px 5px #545454; }
+  .main-nav a {
+    margin: auto; }
+
+.main-nav, main {
+  position: relative; }
+
+.main-nav-scrolled, header {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+main {
+  background-color: #172A3A;
+  color: white;
+  padding: 110px 50px 50px; }
