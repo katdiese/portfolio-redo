@@ -6,3 +6,13 @@ $(document).on('ready', function() {
     typeSpeed: 10
   })
 });
+
+var mainNav = $('.main-nav');
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > 600 ) {
+    mainNav.addClass("main-nav-scrolled");
+  } else {
+    mainNav.removeClass("main-nav-scrolled");
+  }
+})
