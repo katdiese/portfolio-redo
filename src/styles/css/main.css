@@ -61,7 +61,8 @@ header {
   height: 80px;
   display: flex;
   z-index: 150;
-  box-shadow: 0 6px 5px #545454; }
+  box-shadow: 0 6px 5px #545454;
+  margin-bottom: -80px; }
   .main-nav a {
     margin: auto; }
 
@@ -74,6 +75,5 @@ header {
   width: 100%; }
 
 main {
-  background-color: #172A3A;
-  color: white;
+  background-color: white;
   padding: 110px 50px 50px; }

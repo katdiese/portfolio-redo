@@ -67,6 +67,7 @@ header {
   display: flex;
   z-index: 150;
   box-shadow: 0 6px 5px $dark-gray;
+  margin-bottom: -80px;
 
   a {
     margin: auto;
@@ -82,7 +83,6 @@ header {
 }
 
 main {
-  background-color: $dark;
-  color: white;
+  background-color: white;
   padding: 110px 50px 50px
 }
