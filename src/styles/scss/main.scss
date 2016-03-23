@@ -1,49 +1,58 @@
 $off-white: #faebd7;
 $dark-gray: #545454;
+$light-gray: #e9e9e9;
 $dark: #172A3A;
 $light: #74B3CE;
 $purple: #656176;
 
-* {
-  font-family: 'Cantarell', sans-serif;
-}
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  padding-top: 550px;
-}
-.typed-cursor{
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
+@keyframes twinkle-twinkle {
+  from {background-position:0, 0;}
+  to {background-position:-10000px 5000px}
 }
 @keyframes blink{
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
 }
-@-webkit-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+
+* {
+  font-family: 'Lato', sans-serif;
 }
-@-moz-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  padding-top: 500px;
 }
+
 header {
-  height: 550px;
+  height: 500px;
   text-align: center;
   display: flex;
-  background-image: url('../../images/mountain.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  color: $light-gray;
+  background: black url('../../images/stars.png') repeat top center;
+  z-index:0;
   flex-direction: column;
-  font-color: $dark;
+
+  .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+
+  .twinkling {
+    background: transparent url('../../images/twinkling.png') repeat top center;
+    z-index:1;
+    animation: twinkle-twinkle 200s linear infinite;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .descrip {
+    font-weight: 300;
+  }
 
   h1 {
     font-size: 5rem;
@@ -51,7 +60,7 @@ header {
   }
   h2 {
     font-size: 2.5rem;
-    // font-family: 'Cantarell', sans-serif;
+    font-weight: 300;
   }
 
   .hero-text {
@@ -66,6 +75,16 @@ header {
       padding: 0 10px;
     }
   }
+}
+
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  width:100%;
+  display:block;
 }
 
 .main-nav {
@@ -107,14 +126,14 @@ header {
 }
 
 main {
-  background-color: $purple;
+  background-color: white;
   padding: 110px 50px 50px;
 
   .down-arrow {
     text-align: center;
     font-size: 4rem;
     padding: 4rem;
-    color: $off-white;
+    color: $dark;
   }
 
 }
@@ -126,15 +145,8 @@ main {
   }
   .about-greet {
     text-align: center;
-    color: $off-white;
+    color: $dark;
     padding-bottom: 7rem;
-  }
-
-  .code-icon {
-    text-align: center;
-    padding: 5rem 0;
-    font-size: 10rem;
-    color: $off-white;
   }
 
   .about-words {
@@ -144,6 +156,7 @@ main {
 
     p {
       padding: 5px;
+      margin: 0;
     }
   }
 }
