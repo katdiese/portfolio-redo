@@ -10,7 +10,7 @@ $(document).on('ready', function() {
 var mainNav = $('.main-nav');
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() > 550 ) {
+  if( $(this).scrollTop() > 500 ) {
     mainNav.addClass("main-nav-scrolled");
   } else {
     mainNav.removeClass("main-nav-scrolled");
