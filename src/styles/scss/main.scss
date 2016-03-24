@@ -6,8 +6,11 @@ $med-gray: #939393;
 $dark: #172A3A;
 $light: #74B3CE;
 $purple: #656176;
-$header-font: 'Playfair Display SC', serif;
+$bright-blue: #2A93BC;
+$bright-green: #00C549;
+$header-font: 'Allan', cursive;
 $body-font: 'Lato', sans-serif;
+
 
 @keyframes twinkle-twinkle {
   from {background-position:0, 0;}
@@ -38,6 +41,13 @@ header {
   z-index:0;
   flex-direction: column;
 
+  .profile {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
   .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -60,6 +70,10 @@ header {
   h1 {
     font-size: 5rem;
     font-family: $header-font;
+    background: -webkit-linear-gradient(white, $dark);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
   }
   h2 {
     font-size: 2.5rem;
@@ -70,7 +84,7 @@ header {
     margin: auto;
   }
   .location a {
-    color: white;
+    color: $bright-blue;
     text-decoration: none;
     font-size: 2rem;
 
@@ -128,7 +142,8 @@ header {
 }
 
 main {
-  background-color: white;
+  // background-color: white;
+  background: url('../../images/cream_dust.png') repeat 0 0;
   padding: 110px 50px 50px;
 
   .down-arrow {
@@ -211,10 +226,10 @@ main {
     a {
       font-size: 3rem;
       padding: 0 10px;
-      color: white;
+      color: $bright-blue;
 
       :hover {
-        color: $off-white;
+        color: white;
       }
     }
 
