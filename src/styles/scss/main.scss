@@ -1,3 +1,4 @@
+
 $off-white: #faebd7;
 $dark-gray: #545454;
 $light-gray: #e9e9e9;
@@ -5,7 +6,7 @@ $med-gray: #939393;
 $dark: #172A3A;
 $light: #74B3CE;
 $purple: #656176;
-$header-font: 'Fjalla One', sans-serif;
+$header-font: 'Playfair Display SC', serif;
 $body-font: 'Lato', sans-serif;
 
 @keyframes twinkle-twinkle {
@@ -23,7 +24,6 @@ $body-font: 'Lato', sans-serif;
 }
 body {
   margin: 0;
-  // display: flex;
   flex-direction: column;
   font-size: 16px;
   padding-top: 500px;
@@ -110,8 +110,7 @@ header {
     padding: 0 30px;
     font-size: 1.75rem;
     text-decoration: none;
-    font-family: $header-font;
-    font-weight: 700;
+    font-weight: 400;
     color: $dark;
 
     &:hover {
@@ -188,4 +187,40 @@ main {
     font-size: 3rem;
     padding: 10px;
   }
+
 }
+
+
+.project-links {
+  position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background-color: $dark-gray;
+    height: 100%;
+    width: 100%;
+
+    p {
+      width: 85%;
+      margin: 10px auto;
+    }
+
+    a {
+      font-size: 3rem;
+      padding: 0 10px;
+      color: white;
+
+      :hover {
+        color: $off-white;
+      }
+    }
+
+    &:hover {
+      opacity: 0.95;
+    }
+
+    // display: none;
+  }
