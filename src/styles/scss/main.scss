@@ -1,6 +1,7 @@
 $off-white: #faebd7;
 $dark-gray: #545454;
 $light-gray: #e9e9e9;
+$med-gray: #939393;
 $dark: #172A3A;
 $light: #74B3CE;
 $purple: #656176;
@@ -31,7 +32,7 @@ header {
   text-align: center;
   display: flex;
   color: $light-gray;
-  background: black url('../../images/stars.png') repeat top center;
+  background: black url('../../images/stars2.png') repeat top center;
   z-index:0;
   flex-direction: column;
 
@@ -92,7 +93,7 @@ header {
   height: 80px;
   display: flex;
   z-index: 150;
-  box-shadow: 0 6px 5px $dark-gray;
+  box-shadow: 0 6px 5px $med-gray;
   margin-bottom: -80px;
 
   :not(:last-child) {
@@ -136,10 +137,14 @@ main {
     color: $dark;
   }
 
-}
+  section {
+    height: 100vh;
+    display: block;
+    margin: 10vh 0;
+    border-radius: 10px;
+  }
 
-.about {
-
+  .about {
   img {
     width: 100%;
   }
@@ -150,13 +155,34 @@ main {
   }
 
   .about-words {
-    background-color: white;
-    opacity: 0.4;
-    border-radius: 10px;
+    color: $dark;
+    // border-radius: 10px;
+    border: 1px solid $light-gray;
+    box-shadow: 10px 5px 5px $med-gray;
 
     p {
       padding: 5px;
       margin: 0;
+      }
     }
   }
+
+  .projects {
+    h1 {
+      padding: 3rem 0;
+    }
+    .project-icon {
+      font-size: 3rem;
+      padding: 0;
+      margin: 0;
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .contact {
+    background: $dark;
+  }
+
 }
