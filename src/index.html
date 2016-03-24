@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>Untitled</title>
 
+    <link rel="stylesheet" href="mono/css/sequence-theme.mono.css" />
+
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -31,6 +34,7 @@
       <div class="nav-links">
         <a href="#">About</a>
         <a href="#">Projects</a>
+        <a href="#">Resumé</a>
         <a href="#">Contact</a>
       </div>
     </nav>
@@ -51,7 +55,76 @@
             <p>If I'm not at my computer obsessing over some detail or another, I am probably getting lost in the mountains, learning to cook some new asian dish that I can't pronounce, or being manipulated by my cats into buying more kitty treats.</p>
           </div>
         </section>
-        <section class="projects"></section>
+        <section class="projects">
+          <div id="sequence" class="seq">
+            <h1>Projects</h1>
+            <ul class="seq-canvas">
+
+              <li class="seq-step1 seq-valign seq-in">
+                <div class="seq-vcenter">
+                  <a target="_blank" href="http://katdiese.github.io/sentences/src/index.html"><img data-seq class="seq-feature" src="images/sentences.png" alt="The word bank awaits on the snapshot of the game Sentences" width="389" height="300" srcset="images/sentences.png 1x, images/sentences.png 2x" /></a>
+                  <h2 data-seq class="seq-title">Sentences</h2>
+                </div>
+              </li>
+
+              <li class="seq-step3 seq-valign">
+                <div class="seq-vcenter">
+                  <img data-seq class="seq-feature" src="images/restaurant.jpeg" alt="A black and white image of a bustling restaurant with market string lights" width="350" height="300" srcset="images/restaurant.jpeg 1x, images/restaurant.jpeg 2x" />
+                  <h2 data-seq class="seq-title">Deez-steraunts</h2>
+                </div>
+              </li>
+
+              <li class="seq-step2 seq-valign">
+                <div class="seq-vcenter">
+                  <a target="_blank" href="http://www.pet-appearance.com/"><img data-seq class="seq-feature" src="images/pet-appearance.png" alt="A cat lazily lounges on a snapshot of the website pet-appearance.com, the site of Pet Groomer Pet Appearance" width="325" height="300" srcset="images/pet-appearance.png 1x, images/pet-appearance.png 2x" /></a>
+                  <h2 data-seq class="seq-title">pet-appearance.com</h2>
+                </div>
+              </li>
+
+              <li class="seq-step4 seq-valign">
+                <div class="seq-vcenter">
+                  <img data-seq class="seq-feature" src="images/pet-store.png" alt="The dashboard of the app Pet Store, displaying all the owners current pets" width="350" height="300" srcset="images/pet-store.png 1x, images/pet-store.png 2x" />
+                  <h2 data-seq class="seq-title">Pet Store</h2>
+                </div>
+              </li>
+            </ul>
+
+            <fieldset class="seq-nav" aria-label="Slider buttons" aria-controls="sequence">
+
+              <button type="button" class="seq-prev" aria-label="Previous">
+                <i class="fa fa-angle-double-left"></i>
+              </button>
+
+              <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+                <li class="seq-current">
+                  <a href="#step1" rel="step1" title="Go to bananas">
+                    <img src="images/sentences.png" alt="Sentences" width="50" height="40" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#step2" rel="step2" title="Go to orange">
+                    <img src="images/restaurant.jpeg" alt="Restaurant" width="50" height="40" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#step3" rel="step3" title="Go to coconut">
+                    <img src="images/pet-appearance.png" alt="Pet Appearance" width="50" height="40" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#step4" rel="step4" title="Go to orange">
+                    <img src="images/pet-store.png" alt="Pet Store" width="50" height="40" />
+                  </a>
+                </li>
+              </ul>
+
+              <button type="button" class="seq-next" aria-label="Next">
+                <i class="fa fa-angle-double-right"></i>
+              </button>
+
+            </fieldset>
+          </div>
+        </section>
         <section class="contact"></section>
       </div>
     </main>
@@ -62,5 +135,10 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
+
+    <script src="mono/scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="mono/scripts/hammer.min.js"></script>
+    <script src="mono/scripts/sequence.min.js"></script>
+    <script src="mono/scripts/sequence-theme.mono.js"></script>
   </body>
 </html>
