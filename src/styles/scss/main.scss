@@ -5,6 +5,8 @@ $med-gray: #939393;
 $dark: #172A3A;
 $light: #74B3CE;
 $purple: #656176;
+$header-font: 'Fjalla One', sans-serif;
+$body-font: 'Lato', sans-serif;
 
 @keyframes twinkle-twinkle {
   from {background-position:0, 0;}
@@ -17,11 +19,11 @@ $purple: #656176;
 }
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: $body-font;
 }
 body {
   margin: 0;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   font-size: 16px;
   padding-top: 500px;
@@ -57,7 +59,7 @@ header {
 
   h1 {
     font-size: 5rem;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: $header-font;
   }
   h2 {
     font-size: 2.5rem;
@@ -108,7 +110,7 @@ header {
     padding: 0 30px;
     font-size: 1.75rem;
     text-decoration: none;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: $header-font;
     font-weight: 700;
     color: $dark;
 
@@ -133,7 +135,7 @@ main {
   .down-arrow {
     text-align: center;
     font-size: 4rem;
-    padding: 4rem;
+    padding: 2rem;
     color: $dark;
   }
 
@@ -156,33 +158,34 @@ main {
 
   .about-words {
     color: $dark;
-    // border-radius: 10px;
-    border: 1px solid $light-gray;
-    box-shadow: 10px 5px 5px $med-gray;
-
-    p {
-      padding: 5px;
-      margin: 0;
-      }
     }
   }
 
-  .projects {
+.projects {
     h1 {
       padding: 3rem 0;
     }
-    .project-icon {
-      font-size: 3rem;
-      padding: 0;
-      margin: 0;
-      a {
-        color: white;
-      }
+  }
+
+  .carousel-move {
+      font-size: 2rem;
     }
-  }
 
-  .contact {
-    background: $dark;
-  }
+}
 
+.contact {
+  display: flex;
+  background-image: radial-gradient(white, $dark);
+
+  .call-to-action {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    color: $dark;
+    font-family: $header-font;
+  }
+  .contact-nav a{
+    font-size: 3rem;
+    padding: 10px;
+  }
 }
