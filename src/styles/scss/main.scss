@@ -160,9 +160,7 @@ main {
   }
 
   .about {
-  img {
-    width: 100%;
-  }
+
   .about-greet {
     text-align: center;
     color: $dark;
@@ -267,13 +265,24 @@ main {
       height: 100px;
       margin-bottom: -100px;
       a {
-        font-size: 3rem;
+        font-size: 4rem;
       }
     }
     main {
       .down-arrow {
         font-size: 8rem;
       }
+      .about {
+        .about-greet {
+          h1 {
+            font-size: 7rem;
+          }
+        }
+        .about-words {
+          color: $dark;
+          font-size: 2.5rem;
+          }
+        }
       section {
         height: 75vh;
       }

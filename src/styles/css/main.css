@@ -115,8 +115,6 @@ main {
     display: block;
     margin: 10vh 0;
     border-radius: 10px; }
-  main .about img {
-    width: 100%; }
   main .about .about-greet {
     text-align: center;
     color: #172A3A;
@@ -185,9 +183,14 @@ main {
     height: 100px;
     margin-bottom: -100px; }
     .main-nav a {
-      font-size: 3rem; }
+      font-size: 4rem; }
   main .down-arrow {
     font-size: 8rem; }
+  main .about .about-greet h1 {
+    font-size: 7rem; }
+  main .about .about-words {
+    color: #172A3A;
+    font-size: 2.5rem; }
   main section {
     height: 75vh; }
   main .projects h1 {
