@@ -5,18 +5,10 @@ $(document).on('ready', function() {
     strings: ["Javascript", "Sass", "jQuery", "Node", "Html5", "Express", "Git and Github version control", "Wireframing", "CSS3", "Passport", "Knex", "SQL", "Swift", "Angular", "PostgreSQL", "Pair Programming", "Love."],
     typeSpeed: 10
   });
-
+  checkSize();
 });
 
 var mainNav = $('.main-nav');
-
-$(window).scroll(function() {
-  if( $(this).scrollTop() > 500 ) {
-    mainNav.addClass("main-nav-scrolled");
-  } else {
-    mainNav.removeClass("main-nav-scrolled");
-  }
-});
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -32,3 +24,23 @@ $(function() {
     }
   });
 });
+
+function checkSize() {
+  if($('header').css("height") === "1200px") {
+    $(window).scroll(function() {
+      if( $(this).scrollTop() > 1200 ) {
+        mainNav.addClass("main-nav-scrolled");
+      } else {
+        mainNav.removeClass("main-nav-scrolled");
+      }
+    });
+  } else {
+    $(window).scroll(function() {
+      if( $(this).scrollTop() > 500 ) {
+        mainNav.addClass("main-nav-scrolled");
+      } else {
+        mainNav.removeClass("main-nav-scrolled");
+      }
+    });
+  }
+}
