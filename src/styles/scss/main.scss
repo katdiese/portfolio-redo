@@ -284,7 +284,7 @@ main {
           }
         }
       section {
-        height: 75vh;
+        height: 80vh;
       }
     .projects {
         h1 {
@@ -293,6 +293,9 @@ main {
         }
         .proj-title {
           font-size: 5rem;
+        }
+        .proj-nav {
+          padding-bottom: 12rem;
         }
         .move-carousel {
           font-size: 6rem;
