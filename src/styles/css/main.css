@@ -212,10 +212,4 @@ main {
     font-size: 1.7rem;
     margin: 10px auto 0; }
   .overlay a {
-    font-size: 4rem;
-    padding: -5px 10px;
-    color: #2A93BC; }
-    .overlay a :hover {
-      color: white; }
-  .overlay:hover {
-    opacity: 0.95; } }
+    font-size: 4rem; } }

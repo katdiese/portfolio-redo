@@ -183,7 +183,6 @@ main {
   .move-carousel {
       font-size: 3rem;
     }
-
 }
 
 .contact {
@@ -203,7 +202,6 @@ main {
   }
 
 }
-
 
 .project-links {
   position: relative;
@@ -318,16 +316,6 @@ main {
 
     a {
       font-size: 4rem;
-      padding: -5px 10px;
-      color: $bright-blue;
-
-      :hover {
-        color: white;
-      }
-    }
-
-    &:hover {
-      opacity: 0.95;
     }
   }
 }
