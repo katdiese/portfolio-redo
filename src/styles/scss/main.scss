@@ -180,8 +180,8 @@ main {
     }
   }
 
-  .carousel-move {
-      font-size: 2rem;
+  .move-carousel {
+      font-size: 3rem;
     }
 
 }
@@ -237,10 +237,12 @@ main {
     }
   }
 
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  .proj-image {
+    width:389px;
+    height:300px;
+  }
+
+@media only screen and (max-device-width: 480px) {
     body {
       padding-top: 1200px;
     }
@@ -248,34 +250,86 @@ main {
       height: 1200px;
 
       .profile {
-        width: 30rem;
-        height: 30rem;
-        border-radius: 50%;
-        margin-bottom: 10px;
+        width: 45rem;
+        height: 45rem;
       }
 
       h1 {
-        font-size: 8rem;
-        font-family: $header-font;
-        background: -webkit-linear-gradient(white, $dark);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-size: 13rem;
 
       }
       h2 {
         font-size: 4rem;
-        font-weight: 300;
-      }
-
-      .hero-text {
-        margin: auto;
       }
       .location a {
-        color: $bright-blue;
-        text-decoration: none;
-        font-size: 4rem;
+        font-size: 5rem;
       }
     }
+    .main-nav {
+      height: 100px;
+      margin-bottom: -100px;
+      a {
+        font-size: 3rem;
+      }
+    }
+    main {
+      .down-arrow {
+        font-size: 8rem;
+      }
+      section {
+        height: 75vh;
+      }
+    .projects {
+        h1 {
+          font-size: 12rem;
+          margin-top: 5rem;
+        }
+        .proj-title {
+          font-size: 5rem;
+        }
+        .move-carousel {
+          font-size: 6rem;
+        }
+      }
+    .contact {
+      padding-bottom: 10vh;
+
+      .call-to-action {
+        width: 70%;
+        h1 {
+          font-size: 10rem;
+        }
+        p {
+          font-size: 3rem;
+        }
+      }
+      .contact-nav a{
+        font-size: 7rem;
+      }
+
+    }
+  }
+  .overlay {
+    p {
+      width: 95%;
+      font-size: 1.7rem;
+      margin: 10px auto 0;
+    }
+
+    a {
+      font-size: 4rem;
+      padding: -5px 10px;
+      color: $bright-blue;
+
+      :hover {
+        color: white;
+      }
+    }
+
+    &:hover {
+      opacity: 0.95;
+    }
+  }
 }
 
 
