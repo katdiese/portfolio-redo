@@ -162,3 +162,29 @@ main {
       color: white; }
   .overlay:hover {
     opacity: 0.95; }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    padding-top: 1200px; }
+  header {
+    height: 1200px; }
+    header .profile {
+      width: 30rem;
+      height: 30rem;
+      border-radius: 50%;
+      margin-bottom: 10px; }
+    header h1 {
+      font-size: 8rem;
+      font-family: "Allan", cursive;
+      background: -webkit-linear-gradient(white, #172A3A);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    header h2 {
+      font-size: 4rem;
+      font-weight: 300; }
+    header .hero-text {
+      margin: auto; }
+    header .location a {
+      color: #2A93BC;
+      text-decoration: none;
+      font-size: 4rem; } }

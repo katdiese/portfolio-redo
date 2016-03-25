@@ -142,7 +142,6 @@ header {
 }
 
 main {
-  // background-color: white;
   background: url('../../images/cream_dust.png') repeat 0 0;
   padding: 110px 50px 50px;
 
@@ -236,6 +235,48 @@ main {
     &:hover {
       opacity: 0.95;
     }
-
-    // display: none;
   }
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      padding-top: 1200px;
+    }
+    header {
+      height: 1200px;
+
+      .profile {
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 8rem;
+        font-family: $header-font;
+        background: -webkit-linear-gradient(white, $dark);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+      }
+      h2 {
+        font-size: 4rem;
+        font-weight: 300;
+      }
+
+      .hero-text {
+        margin: auto;
+      }
+      .location a {
+        color: $bright-blue;
+        text-decoration: none;
+        font-size: 4rem;
+      }
+    }
+}
+
+
+
