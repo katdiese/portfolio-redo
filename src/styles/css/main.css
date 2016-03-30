@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Variane;
+  src: url("../../fonts/Variane_Script.ttf"); }
+
 @keyframes twinkle-twinkle {
   from {
     background-position: 0, 0; }
@@ -29,11 +33,6 @@ header {
   background: black url("../../images/stars2.png") repeat top center;
   z-index: 0;
   flex-direction: column; }
-  header .profile {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    margin-bottom: 10px; }
   header .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -48,11 +47,9 @@ header {
   header .descrip {
     font-weight: 300; }
   header h1 {
-    font-size: 5rem;
-    font-family: "Allan", cursive;
-    background: -webkit-linear-gradient(white, #172A3A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    font-size: 15rem;
+    color: #faebd7;
+    font-family: "Variane", cursive; }
   header h2 {
     font-size: 2.5rem;
     font-weight: 300; }
@@ -87,7 +84,7 @@ header {
     margin: auto; }
   .main-nav a {
     padding: 0 30px;
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     text-decoration: none;
     font-weight: 400;
     color: #172A3A; }
@@ -115,28 +112,40 @@ main {
     display: block;
     margin: 10vh 0;
     border-radius: 10px; }
+  main .about .profile {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin-bottom: 10px; }
   main .about .about-greet {
     text-align: center;
-    color: #172A3A;
-    padding-bottom: 7rem; }
-  main .about .about-words {
     color: #172A3A; }
+  main .about .about-words {
+    color: #172A3A;
+    font-size: 2rem;
+    font-weight: 100;
+    padding-bottom: 7rem; }
   main .projects h1 {
-    padding: 3rem 0; }
+    padding-top: 9rem; }
   main .move-carousel {
     font-size: 3rem; }
 
 .contact {
+  margin-top: 40vh;
   display: flex;
   background-image: radial-gradient(white, #172A3A); }
+  .contact h1 {
+    font-size: 5rem; }
   .contact .call-to-action {
     width: 40%;
     text-align: center;
     margin: auto;
     color: #172A3A;
-    font-family: "Allan", cursive; }
+    font-family: "Variane", cursive;
+    font-size: 2rem;
+    font-weight: 100; }
   .contact .contact-nav a {
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 10px; }
 
 .project-links {
@@ -202,16 +211,6 @@ main {
     padding-bottom: 12rem; }
   main .projects .move-carousel {
     font-size: 6rem; }
-  main .contact {
-    padding-bottom: 10vh; }
-    main .contact .call-to-action {
-      width: 70%; }
-      main .contact .call-to-action h1 {
-        font-size: 10rem; }
-      main .contact .call-to-action p {
-        font-size: 3rem; }
-    main .contact .contact-nav a {
-      font-size: 7rem; }
   .overlay p {
     width: 95%;
     font-size: 1.7rem;

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Variane;
+  src: url('../../fonts/Variane_Script.ttf');
+}
+
 
 $off-white: #faebd7;
 $dark-gray: #545454;
@@ -8,7 +13,7 @@ $light: #74B3CE;
 $purple: #656176;
 $bright-blue: #2A93BC;
 $bright-green: #00C549;
-$header-font: 'Allan', cursive;
+$header-font: 'Variane', cursive;
 $body-font: 'Lato', sans-serif;
 
 
@@ -41,13 +46,6 @@ header {
   z-index:0;
   flex-direction: column;
 
-  .profile {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-
   .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -68,12 +66,9 @@ header {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 15rem;
+    color: $off-white;
     font-family: $header-font;
-    background: -webkit-linear-gradient(white, $dark);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
   }
   h2 {
     font-size: 2.5rem;
@@ -122,7 +117,7 @@ header {
 
   a {
     padding: 0 30px;
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     text-decoration: none;
     font-weight: 400;
     color: $dark;
@@ -160,21 +155,30 @@ main {
   }
 
   .about {
-
-  .about-greet {
-    text-align: center;
-    color: $dark;
-    padding-bottom: 7rem;
+    .profile {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin-bottom: 10px;
   }
 
-  .about-words {
-    color: $dark;
+    .about-greet {
+      text-align: center;
+      color: $dark;
+      // padding-bottom: 7rem;
     }
+
+    .about-words {
+      color: $dark;
+      font-size: 2rem;
+      font-weight: 100;
+      padding-bottom: 7rem;
+      }
   }
 
 .projects {
     h1 {
-      padding: 3rem 0;
+      padding-top: 9rem;
     }
   }
 
@@ -184,8 +188,13 @@ main {
 }
 
 .contact {
+  margin-top: 40vh;
   display: flex;
   background-image: radial-gradient(white, $dark);
+
+  h1 {
+    font-size: 5rem;
+  }
 
   .call-to-action {
     width: 40%;
@@ -193,9 +202,11 @@ main {
     margin: auto;
     color: $dark;
     font-family: $header-font;
+    font-size: 2rem;
+    font-weight: 100;
   }
   .contact-nav a{
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 10px;
   }
 
@@ -301,23 +312,6 @@ main {
           font-size: 6rem;
         }
       }
-    .contact {
-      padding-bottom: 10vh;
-
-      .call-to-action {
-        width: 70%;
-        h1 {
-          font-size: 10rem;
-        }
-        p {
-          font-size: 3rem;
-        }
-      }
-      .contact-nav a{
-        font-size: 7rem;
-      }
-
-    }
   }
   .overlay {
     p {
